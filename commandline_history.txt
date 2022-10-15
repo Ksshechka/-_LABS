@@ -1,0 +1,118 @@
+
+  383  whoami
+  384  whiomi
+  385  whoami
+  386  echo "Hello world"
+  387  echo Hello world
+  388  date
+  389  cal
+  390  man cal
+  391  cal -3
+  392  history
+  393  clear
+  394  pwd
+  395  cd /
+  396  cd ..
+  397  pwd
+  398  ls
+  399  ls /var
+  400  cd ~
+  401  cd ..
+  402  pwd
+  403  ls
+  404  ls -1
+  405  cd
+  406  mkdir fruits
+  407  cd /
+  408  mkdir ~/animals
+  409  touch /tmp/temp
+  410  cd
+  411  cd fruits 
+  412  touch apple banana pineaple lion
+  413  ls
+  414  cd
+  415  cd animals
+  416  touch cat.txt dog.txt elephant.txt
+  417  ls
+  418  cd
+  419  cd fruits
+  420  data apple
+  421  data -r apple
+  422  date -r apple
+  423  ls b*
+  424  ls b* i*
+  425  ls [bi]*
+  426  ls *a
+  427  cp /etc/passwd ~
+  428  cat /etc/issue
+  429  ls
+  430  cp /etc/passwd apple
+  431  cat apple
+  432  ls apple
+  433  cat /etc/issue
+  434  mv lion ~/animals
+  435  mv pineaple pineapple
+  436  ls
+  437  wc -l /etc/passwd
+  438  cd
+  439  ln -s /etc/passwd passwd_link
+  440  ln .bash_history history_hard
+  441  ls -l ~/.bash_history
+  442  ls -l ~/fruits
+  443  cd
+  444  cd fruits
+  445  apple
+  446  apple rmdir
+  447  rmdir apple
+  448  rmdir fruits/apple
+  449  rm fruits/apple
+  450  rm apple
+  451  touch rmme
+  452  rmidr rmme
+  453  rmdir rmme
+  454  rm rmme
+  455  rmdir ffruits
+  456  rmdir fruits
+  457  rm -fr fruits
+  458  cat /etc/passwd /var/log/boot.log
+  459  cp /etc/init.d/ ~
+  460  cp -r /etc/init.d/ ~
+  461  rm -fr init.d
+  462  cut -d: -f1 /etc/passwd | sort
+  463  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+  464  cut -d: -f1,3, /etc/passwd | column -ts: | less
+  465  grep :/bin/bash /etc/passwd | wc -1
+  466  grep :/bin/bash /etc/passwd | wc -l
+  467  grep :/bin/bash /etc/passwd | cut -d: -f1 | sort -r
+  468  rpm -qa --qf '%{NAME}: %{SIZE}\n' |sort -rn -k2,2 | head -n25 
+  469  rpm -ql man-db | xargs -l du 2> /dev/null | sort -n
+  470  top -b -n1 | sort -i -k11 | less
+  471  top -b -n1 | tail -n+8 | cut -c7- | tr -s ' ' '\t' | cut -f1,2
+  472  sort -k1 /etc/passwd | tr ":" " " | column -t | less
+  473  cd /usr/share/doc/git-*
+  474  cd
+  475  cd /usr/share/doc/git-*
+  476  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | uniq -c | sort -rn | head -5
+  477  cat user-manual.txt |tr -cs '[:alpha:] '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn |head -
+cat user-manual.txt |tr -cs '[:alpha:] '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn |head -5
+  478  tr '[:lower:]' '[:upper:]' < user-manual.txt | tr -d '[:punct:] \n\t' | foid -w1 | sort | uniq -c | sort -rn | head -5
+  479  tr '[:lower:]' '[:upper:]' < user-manual.txt | tr -d '[:punct:] \n\t' | fold -w1 | sort | uniq -c | sort -rn | head -5
+  480  tr -cs '[:alpha:]' '\n' < user-manual.txt | less | grep -E ........| sort | uniq -c | sort -rn |head
+  481  ping ya.ru
+  482  curl wttr.in
+  483  hostname
+  484  hostname -I
+  485  curl ifconfig.me
+  486  wget https://raw.githubusercontent.com/jlevy/the/art/of/command/line
+  487  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md |less
+  488  id whoami
+  489  id Kseniya
+  490  usermod -aG wheel Kseniya
+  491  usermod -aG wheel kseniya
+  492  id kseniya
+  493  usermod -aG wheel kseniya
+  494  sudo id
+  495  id
+  496  sudo less /var/log/messages
+  497  su
+  498  history > commandline_history.txt
