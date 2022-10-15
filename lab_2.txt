@@ -1,0 +1,44 @@
+    1  cd
+    2  mkdir test
+    3  cd test
+    4  touch file
+    5  chmod 0 file
+    6  echo "тест" > file
+    7  cat file
+    8  chmod u+w file
+    9  ll
+   10  echo "test" > file
+   11  ll
+   12  chmod g+r file
+   13  cat file
+   14  ll
+   15  chmod u+r file
+   16  cat file
+   17  ls -l
+   18  mkdir dir
+   19  cd dir
+   20  touch new_file
+   21  echo "file 2" > new_file
+   22  cat dir
+   23  cd ..
+   24  ls dir
+   25  chmod 677 dir
+   26  ls dir
+   27  rm new_file
+   28  chown root file
+   29  chgrp root file
+   30  umask 177
+   31  touch file1
+   32  ls -l
+   33  umask 111
+   34  touch file2
+   35  ls -l
+   36  cat file
+   37  history > lab_2.txt
+
+итого 4
+drw-rwxrwx. 2 ks ks 22 окт 15 17:07 dir
+-rw-r-----. 1 ks ks  5 окт 15 17:02 file
+-rw-------. 1 ks ks  0 окт 15 17:11 file1
+-rw-rw-rw-. 1 ks ks  0 окт 15 17:13 file2
+
