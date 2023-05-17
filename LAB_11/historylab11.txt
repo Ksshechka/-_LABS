@@ -1,0 +1,33 @@
+    1  dnf update 
+    2  dnf install gnuplot 
+    3  учше
+    4  exit
+    5  sudo yum install gnuplot
+    6  rpm -qi gnuplot
+    7  yum list installed gnuplot
+    8  rpm -qf /usr/bin/gnuplot-wx
+    9  cexit
+   10  exit
+   11  visudo
+   12  EXIT
+   13  exit
+   14  visudo
+   15  EXIT
+   16  exit
+   17  visudo
+   18  exit
+   19  sudo cp /etc/pam.d/su.bak /etc/pam.d/su
+   20  auditctl -D
+   21  auditctl -w /home/ks/file -p war -k ks_file
+   22  auditctl -l
+   23  exit
+   24  aureport --file -ts today -i --summary 
+   25  aureport --file -ts recent
+   26  ausearch -a 13053
+   27  aureport
+   28  aureport --auth -ts recent
+   29  aureport --user -ts recent -i
+   30  date time audit term host exe event
+   31  date time auid term host exe event
+   32  ausearch --uid 1001 -ts  recent
+   33  history > historylab11.txt

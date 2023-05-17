@@ -1,0 +1,10 @@
+    1  clear 
+    2  id
+    3  pwd
+    4  touch file1
+    5  su
+    6  echo 'Hello world' > file1
+    7  cat file1
+    8  chmod 600 file1
+    9  su
+   10  history > his.txt
